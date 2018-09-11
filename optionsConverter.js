@@ -49,6 +49,7 @@ export function convertStyle(style = {}, buttons) {
         text: style.title,
         fontSize: style.navBarTextFontSize,
         color: style.navBarTextColor,
+        alignment: style.titleAlignment,
         fontFamily: style.navBarTextFontFamily,
         component: {
           name: style.navBarCustomView,
