@@ -80,7 +80,11 @@ export function convertStyle(style = {}, buttons) {
     },
     bottomTabs: {
       visible: style.tabBarHidden ? !style.tabBarHidden : undefined,
-      drawBehind: style.drawUnderTabBar
+      drawBehind: style.drawUnderTabBar,
+      titleDisplayMode: style.titleDisplayMode,
+    },
+    layout: {
+      backgroundColor: style.backgroundColor,
     }
   };
   deleteUndefinedProperies(convertedStyle);
