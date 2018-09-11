@@ -140,6 +140,11 @@ function processButtonsArray(buttons, type) {
     if (type === 'leftButtons' && button.id === 'back' && Platform.OS === 'android') {
       button.id = 'RNN.back'
     }
+    
+    if(!button.id){
+        button.id = generateGuid();
+    }
+    
     button.enabled = !button.disabled;
     button.text = button.title;
 
