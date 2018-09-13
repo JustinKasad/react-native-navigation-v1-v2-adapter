@@ -28,6 +28,7 @@ export function convertStyle(style = {}, buttons) {
     rootBackgroundImage: style.rootBackgroundImageName,
     modalPresentationStyle: style.modalPresentationStyle,
     topBar: {
+      buttonColor: style.topBarButtonColor,
       visible: style.navBarHidden ? !style.navBarHidden : undefined,
       hideOnScroll: style.navBarHideOnScroll,
       buttonColor: style.navBarButtonColor,
