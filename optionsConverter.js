@@ -41,7 +41,7 @@ export function convertStyle(style = {}, buttons) {
       },
       backButton: {
         image: style.backButtonImage,
-        showTitle: !style.hideBackButtonTitle
+        showTitle: false,
       },
       backButtonImage: style.backButtonImage,
       hideBackButtonTitle: style.hideBackButtonTitle,
