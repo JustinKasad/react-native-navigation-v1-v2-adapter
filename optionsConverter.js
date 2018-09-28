@@ -20,7 +20,7 @@ export function convertStyle(style = {}, buttons) {
       style: style.statusBarTextColorScheme,
       visible: style.statusBarHidden ? !style.statusBarHidden : undefined,
       drawBehind: style.drawUnderStatusBar,
-      style: style.statusBarColor,
+      backgroundColor: style.statusBarColor,
     },
     animations: style.animations,
     popGesture: style.disabledBackGesture ? !style.disabledBackGesture : undefined,
